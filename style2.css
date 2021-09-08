@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     
+}
+.card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#2596be,#80ED99);
+
+
+}
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    transform: translateX(50%);
+    height: 600px;
+    transition: 0.5s;
+}
+.card:hover img{
+    position: relative;
+    left:20%;
+    bottom: 50px;
+    height: 800px;
+
+}
+.card:hover .body{
+    background-color: linear-gradient(135deg,#2596be,#80ED99);
+
+}
+.card .content{
+    position: absolute;
+    width: 100%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card:hover .content{
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+.card .content h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1;
+}
+.card .content p{
+    color: #fff;
+}
+
+.card .content a{
+    position: relative;
+    display: inline-block;
+    color:#111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
